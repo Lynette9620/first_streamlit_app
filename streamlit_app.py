@@ -39,11 +39,12 @@ my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 user = "Lynette2096",
 password = "Lynette@2096",
 account = "https://ep16884.ca-central-1.aws.snowflakecomputing.com",
-warehouse = "pc_rivery_wh", 
-database = "pc_rivery_db",
-schema = "public";
+warehouse = PC_RIVERY_WH", 
+database = "PC_RIVERY_DB",
+schema = "PUBLIC";
+
 my_cur = my_cnx.cursor()
-my_cur.execute("select * from pc_rivery_db.public.FRUIT_LOAD_LIST")
+my_cur.execute("select * from PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST");
 my_data_row = my_cur.fetchone()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_row);

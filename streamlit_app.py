@@ -35,12 +35,12 @@ streamlit.dataframe(fruityvice_normalized);
 
 import snowflake.connector
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-user = "Lynette2096"
-password = "Lynette@2096"
-account = "https://ep16884.ca-central-1.aws.snowflakecomputing.com"
-warehouse = PC_RIVERY_WH"
-database = "PC_RIVERY_DB"
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"]);
+user = "Lynette2096",
+password = "Lynette@2096",
+account = "https://ep16884.ca-central-1.aws.snowflakecomputing.com",
+warehouse = "PC_RIVERY_WH",
+database = "PC_RIVERY_DB",
 schema = "PUBLIC";
 
 my_cur = my_cnx.cursor()

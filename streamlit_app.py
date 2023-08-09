@@ -70,6 +70,7 @@ def get_fruit_load_list():
                       streamlit.text(back_from_function)
                       
                       streamlit.write('Thanks for adding jackfruit', add_my_fruit)
+                      
 
 
 
